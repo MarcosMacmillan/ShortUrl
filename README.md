@@ -7,6 +7,8 @@ A minimal, production-ready URL shortener built with Laravel. It includes authen
 
 ---
 
+![GIF showing how the system works](public/how-it-work.gif)
+
 ## Features
 
 * 🔐 Auth & email verification (Laravel Breeze)

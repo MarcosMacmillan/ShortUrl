@@ -63,10 +63,10 @@
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-300">{{ $url->created_at->format('d/m/Y H:i') }}</td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600 dark:text-red-400 hover:underline">
-                                            <form action="{{ route('destroy', $url->id) }}" method="POST" onsubmit="return confirm('Tem certeza que deseja apagar esta URL?');">
+                                            <form action="{{ route('destroy', $url->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this URL?');">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="text-red-600 dark:text-red-400 hover:underline">Apagar</button>
+                                                <button type="submit" class="text-red-600 dark:text-red-400 hover:underline">Delete</button>
                                             </form>
                                         </td>
                                     </tr>
